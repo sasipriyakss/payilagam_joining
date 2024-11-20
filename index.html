@@ -9,11 +9,11 @@
 </head>
 
     <div class="container">
-        <form action="/submit" method="POST" class="form">
+        <form action="/submit" method="POST" class="form" id="form">
            <h2>Trainee Joining Form</h2>
 
        
-   
+   <!-- Name and DOB -->
 <div class="input-flex">
    <div>
    <label for="name" class="form-label">Name</label>
@@ -25,6 +25,7 @@
    <input type="date" id="dob" class="form-input" required>
    </div>
 </div>
+<!-- Email and Mobile Number -->
 <div class="input-flex">
     <div>
     <label for="email" class="form-label">Email</label>
@@ -49,12 +50,14 @@
  </div>
 </div>
 
+            <!-- College -->
 <div class="mb-3">
     <label for="college" class="form-label">College</label>
-    <input type="text" id="qual" class="form-input" placeholder="college*" required>
+    <input type="text" id="college" class="form-input" placeholder="college*" required>
 </div>
+<!-- Marks -->
 <label for="pom" class="form-label">Percentage of Marks</label>
-<div class="input-flex">
+   <div class="input-flex">
     
     <div>
     <label for="10th" class="form-label">10th</label>
@@ -77,10 +80,12 @@
     </div>
 </div>
 
+            <!-- Course Interested and Mode -->
+
 <div class="input-flex">
     <div>
     <label for="cinterest" class="form-label">Course Intrested</label>
-    <select  id="cinterest" class="form-input">
+    <select  id="cinterest" class="form-input" required>
 
         <option value="" disabled selected>Select</option>
         <option value="java">Java Full Stack</option>
@@ -89,7 +94,7 @@
         <option value="testing">Testing</option>
     </select>
     </div>
-    
+    <!-- Course Mode -->
     <div>
         <label for="cmode" class="form-label">Course Mode</label>
         <div class="input-flex">
@@ -97,42 +102,44 @@
     <label for="online" class="form-upload">Online</label></div>
     <div><input type="radio" id="offline" name="cmode" value="offline">
     <label for="offline">Offline</label></div>
-    <!-- <select class="form-input" id="cmode">
-        <option value="" disabled selected> Select</option>
-        <option value="online">Online</option>
-        <option value="Offline">Offline</option>
-    </select> -->
+  
 </div>
     </div>
-</div>
+    </div>
+    <!-- about payilagam -->
+
 <div class="mb-3">
     <label for="know" class="form-label">How do you know Payilagam</label>
     <input type="text" id="know" class="form-input" required>
 
 </div>
+<!-- Organization details -->
 
 <div class="mb-3">
     <label for="work" class="form-label">Organization details, if working now</label>
     <input type="text" id="work" class="form-input" required>
 
 </div>
-
+<!-- address -->
 <div class="mb-3">
     <label for="address" class="form-label">Permanent Address</label>
-    <textarea id="address" rows="6" class="form-input" ></textarea>
+    <textarea id="address" rows="6" class="form-input" required></textarea>
 </div>
+<!-- Photo upload -->
 <div class="mb-3">   
            
     <label for="photo" class="form-upload">Upload Photo:</label>
     <input type="file" id="photo" name="photo" accept="image/*" required>
     
-</div>    
+</div>
+    <!--IDProof upload  -->
 <label for="proof" class="form-label">Any ID Proof No:</label>
 <div class="input-flex">
-    <div> <input type="text" id="proof" class="form-input" placeholder="ID Proof No*"></div>
+    <div> <input type="text" id="proof" class="form-input" placeholder="ID Proof No*" required></div>
     <div><label for="idproof" class="form-upload">Upload ID Proof:</label>
         <input type="file" id="idproof" accept="image/*" required></div>
 </div>
+<!-- date -->
 <div class="mb-3">
    <label for="date" class="form-label">Date:</label>
    <input type="date" id="date" class="jdate form-input">
@@ -143,6 +150,6 @@
 </form>
 </div>
 
-
+<script src="app.js"></script>
 </body>
 </html>
