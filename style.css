@@ -30,7 +30,7 @@
 .form h2{
  font-weight: 500;
  letter-spacing: 0.5px;
- margin-bottom: 20px;
+ margin-bottom: 25px;
  color: #05052f;
  text-align: center;
 }
@@ -72,10 +72,12 @@
     transition: 0.5s;
     resize: none;
 }
-.form-input::placeholder, .form-input[type="date"]::-webkit-datetime-edit-text,
-    .form-input[type="date"]::-webkit-datetime-edit-day-field,
-    .form-input[type="date"]::-webkit-datetime-edit-month-field,
-    .form-input[type="date"]::-webkit-datetime-edit-year-field{
+
+.form-input:focus{
+    border:1px solid #3182ce;
+}
+.form-input::placeholder
+    {
         font-weight: 300;
         color:rgb(83,99,135,0.5);
     }
