@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Joining Form </title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAllBMVEX///7////5+/zQ2eaVqsdHcacASZEtYp6Bm77AzN3x9Pne5O2gssxafq0ATZMJUZUfWZiOpcTH0eDm6/FulMVgiLozZ6JSeayXrM+Qq9N/nslsjLimuNa3w9za4u+KmrbDyNTi4uKEg4ORkZGpqanr6ufJzNLQ0M8AAABoZ2ejo6MYFxcIBgaYmJhaWlo5ODhMS0vY2NiS1TwTAAAAwElEQVR4AWyOgwHAMBAA+6lt295/vdq94A3sAQAgmMHewAxOkBTNsNw7DrwgSpKsKIosUaSq3aOgG6Y1Q1rKErcdDu6FrOuZtKws+EHIokfXeaLrGpZs+Y7AXnWwwKNZRo7rMXGC4IqlWZ4Vc3BWy0io0vuqUDdN07L87IKuyfscsEewH9o1HYo5b/wJTmOASGoPb0k9SAjrYpPU1tHQV1I20ACysEiCpDV0gBSmJApADXgmQxSgiiKJDmgoSRgAAO2EIy9OyAWvAAAAAElFTkSuQmCC">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <div class="container">
+        <form action="/submit" method="POST" class="form">
+           <h2>Trainee Joining Form</h2>
+
+       
+   
+<div class="input-flex">
+   <div>
+   <label for="name" class="form-label">Name</label>
+   <input type="text" id="name" class="form-input" placeholder="Name*" required>
+   </div>
+
+   <div>
+   <label for="dob" class="form-label">DOB</label>
+   <input type="date" id="dob" class="form-input" required>
+   </div>
+</div>
+<div class="input-flex">
+    <div>
+    <label for="email" class="form-label">Email</label>
+    <input type="email" id="email" class="form-input" placeholder="example@email.com*" required>
+    </div>
+ 
+    <div>
+    <label for="mobile" class="form-label">Mobile Number</label>
+    <input type="text" id="mobile" class="form-input" placeholder="Mobile number*" required>
+    </div>
+ </div>
+ <!-- qualification and year of passing -->
+ <div class="input-flex">
+ <div>
+ <label for="qual" class="form-label">Qualification</label>
+ <input type="text" id="qual" class="form-input" placeholder="qualification*" required>
+ </div>
+
+ <div>
+ <label for="yop" class="form-label">Year of Passing</label>
+ <input type="text" id="yop" class="form-input" placeholder="year*" required>
+ </div>
+</div>
+
+<div class="mb-3">
+    <label for="college" class="form-label">College</label>
+    <input type="text" id="qual" class="form-input" placeholder="college*" required>
+</div>
+<label for="pom" class="form-label">Percentage of Marks</label>
+<div class="input-flex">
+    
+    <div>
+    <label for="10th" class="form-label">10th</label>
+    <input type="text" id="10th" class="form-input" placeholder="marks %*" required>
+    </div>
+   
+    <div>
+    <label for="12th" class="form-label">12th</label>
+    <input type="text" id="12th" class="form-input" placeholder="marks%*" required>
+    </div>
+
+    <div>
+        <label for="ug" class="form-label">UG</label>
+        <input type="text" id="ug" class="form-input" placeholder="marks %*" required>
+    </div>
+
+    <div>
+        <label for="pg" class="form-label">PG</label>
+        <input type="text" id="pg" class="form-input" placeholder="marks %*" required>
+    </div>
+</div>
+
+<div class="input-flex">
+    <div>
+    <label for="cinterest" class="form-label">Course Intrested</label>
+    <select  id="cinterest" class="form-input">
+
+        <option value="" disabled selected>Select</option>
+        <option value="java">Java Full Stack</option>
+        <option value="python">Python Full stack </option>
+        <option value="react">React</option>
+        <option value="testing">Testing</option>
+    </select>
+    </div>
+    
+    <div>
+        <label for="cmode" class="form-label">Course Mode</label>
+        <div class="input-flex">
+    <div><input type="radio" id="online" name="cmode" value="online" >
+    <label for="online" class="form-upload">Online</label></div>
+    <div><input type="radio" id="offline" name="cmode" value="offline">
+    <label for="offline">Offline</label></div>
+    <!-- <select class="form-input" id="cmode">
+        <option value="" disabled selected> Select</option>
+        <option value="online">Online</option>
+        <option value="Offline">Offline</option>
+    </select> -->
+</div>
+    </div>
+</div>
+<div class="mb-3">
+    <label for="know" class="form-label">How do you know Payilagam</label>
+    <input type="text" id="know" class="form-input" required>
+
+</div>
+
+<div class="mb-3">
+    <label for="work" class="form-label">Organization details, if working now</label>
+    <input type="text" id="work" class="form-input" required>
+
+</div>
+
+<div class="mb-3">
+    <label for="address" class="form-label">Permanent Address</label>
+    <textarea id="address" rows="6" class="form-input" ></textarea>
+</div>
+<div class="mb-3">   
+           
+    <label for="photo" class="form-upload">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+    
+</div>    
+<label for="proof" class="form-label">Any ID Proof No:</label>
+<div class="input-flex">
+    <div> <input type="text" id="proof" class="form-input" placeholder="ID Proof No*"></div>
+    <div><label for="idproof" class="form-upload">Upload ID Proof:</label>
+        <input type="file" id="idproof" accept="image/*" required></div>
+</div>
+<div class="mb-3">
+   <label for="date" class="form-label">Date:</label>
+   <input type="date" id="date" class="jdate form-input">
+</div> 
+<div class="button">
+<button class="btn">SUBMIT</button>
+</div>
+</form>
+</div>
+
+
+</body>
+</html>
