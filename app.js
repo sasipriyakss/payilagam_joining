@@ -132,7 +132,8 @@ document.getElementById('form').addEventListener('submit', function (e) {
     // If all validations pass, submit the form
     if (isValid) {
         alert("Form submitted successfully!");
-        this.submit(); // Submit the form
+        this.submit();
+        location.reload();// Submit the form
     } else {
         alert(errorMessage); // Show error messages
     }
